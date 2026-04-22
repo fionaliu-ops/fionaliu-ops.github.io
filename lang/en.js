@@ -10,8 +10,8 @@ const enNavbarData = {
 
 // ---------- Home page data
 const enHomePageData = {
-  name: " Your name ",
-  jobTitle: " Job title ",
+  name: " Tong Liu ",
+  jobTitle: " Phd. Student ",
   home_title: "About me",
   home_content: `
   <div>
@@ -132,7 +132,7 @@ const enResearchPageData = {
 
 // ---------- Jobs page data
 const enJobsPageData = {
-  title: "Jobs",
+  title: "Experiences",
   items: [
     {
       title: `Job title`,
