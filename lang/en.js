@@ -4,7 +4,7 @@ const enNavbarData = {
   Home: "Home",
   publications: "publications",
   Research: "Research",
-  Jobs: "Jobs",
+  Experiences: "Experiences",
   Contact: "Contact",
 };
 
@@ -131,7 +131,7 @@ const enResearchPageData = {
 };
 
 // ---------- Jobs page data
-const enJobsPageData = {
+const enExperiencesPageData = {
   title: "Experiences",
   items: [
     {

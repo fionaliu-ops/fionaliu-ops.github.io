@@ -24,9 +24,9 @@ $(document).ready(function () {
         url: "/research.html",
       },
       {
-        active: navbarLinks.jobs ? true : false,
-        title: enNavbarData.Jobs,
-        url: "/jobs.html",
+        active: navbarLinks.experiences ? true : false,
+        title: enNavbarData.Experiences,
+        url: "/experiences.html",
       },
       {
         active: navbarLinks.contact ? true : false,
