@@ -135,6 +135,15 @@ const enExperiencesPageData = {
   title: "Experiences",
   items: [
     {
+      title: "Undergraduate",
+      company: "Computer Science",
+      startData: "2022",
+      endDate: "2026",
+      location: "Xi'an Jiaotong University",
+      abstract: "",
+      achievements: [],
+    },
+    {
       title: `Job title`,
       company: "Company name",
       startData: "20 April 2019",

@@ -217,14 +217,13 @@ $(document).ready(function () {
 
   // Jobs page data
   function jobsData() {
-    document.getElementById("page_title").innerText =
-      lang === "en" ? "Jobs" : " سوابق شغلی ";
+    document.getElementById("page_title").innerText = enExperiencesPageData.title;
 
     document.getElementById("jobs_title").innerHTML =
-      lang === "en" ? enJobsPageData.title : faJobsPageData.title;
+      enExperiencesPageData.title;
 
     document.getElementById("jobs_data").innerHTML = (
-      lang === "en" ? enJobsPageData.items : faJobsPageData.items
+      enExperiencesPageData.items
     )
       .map(
         (job) =>
@@ -258,7 +257,7 @@ $(document).ready(function () {
       .join("");
   }
 
-  if (pathname === "/jobs") {
+  if (pathname === "/jobs" || pathname === "/experiences") {
     jobsData();
   }
 
