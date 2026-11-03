@@ -13,9 +13,8 @@ $(document).ready(function () {
       document.getElementById("languageIcon") &&
       document.getElementById("languageText")
     ) {
-      document.getElementById("languageIcon").src =
-        "../assets/images/icons/en.png";
-      document.getElementById("languageText").innerText = "EN";
+      document.getElementById("languageIcon").innerText = "🇨🇳";
+      document.getElementById("languageText").innerText = "CN";
     }
   } else {
     document.getElementById("content_wrapper").classList.add("ltr_wrapper");
@@ -23,9 +22,8 @@ $(document).ready(function () {
       document.getElementById("languageIcon") &&
       document.getElementById("languageText")
     ) {
-      document.getElementById("languageIcon").src =
-        "../assets/images/icons/ir.png";
-      document.getElementById("languageText").innerText = "FA";
+      document.getElementById("languageIcon").innerText = "🇨🇳";
+      document.getElementById("languageText").innerText = "CN";
     }
   }
 

@@ -30,8 +30,10 @@
 }
 
 #languageIcon {
-  width: 15px;
+  width: auto;
   margin: 0 5px;
+  font-size: 18px;
+  line-height: 1;
 }
 
 .rtl_wrapper #language {
