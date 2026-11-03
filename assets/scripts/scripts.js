@@ -236,8 +236,8 @@ $(document).ready(function () {
               }</div>
                   <div class="experience_details">
                     <h3>${item.title}</h3>
-                    <div class="experience_subtitle">${item.company}</div>
-                    <div class="experience_location">${item.location}</div>
+                    ${item.company ? `<div class="experience_subtitle">${item.company}</div>` : ""}
+                    ${item.location ? `<div class="experience_location">${item.location}</div>` : ""}
                     ${item.abstract ? `<p>${item.abstract}</p>` : ""}
                     ${
                       item.achievements?.length

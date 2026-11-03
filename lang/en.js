@@ -135,6 +135,13 @@ const enExperiencesPageData = {
   title: "Experiences",
   education: [
     {
+      title: "Exchange Student",
+      company: "Computer Science",
+      startData: "2024.08",
+      endDate: "2024.12",
+      location: "University of California, Berkeley",
+    },
+    {
       title: "Undergraduate",
       company: "Computer Science",
       startData: "2022",
@@ -143,6 +150,15 @@ const enExperiencesPageData = {
     },
   ],
   work: [
+    {
+      title: "Apple (Beijing)",
+      company: "",
+      startData: "2025.07",
+      endDate: "2026.01",
+      location: "",
+      abstract: "",
+      achievements: [],
+    },
     {
       title: `Job title`,
       company: "Company name",
