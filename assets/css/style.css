@@ -283,80 +283,85 @@
   margin-top: 3rem;
 }
 
-#jobs_data .job_item {
-  margin: 0;
-  position: relative;
-  padding-left: 2rem;
-  margin-bottom: 2rem;
+#jobs_data {
+  max-width: 900px;
+  margin: 2rem auto 4rem;
 }
 
-#jobs_data .job_item::after {
+#jobs_data .experience_section {
+  margin-bottom: 3rem;
+}
+
+#jobs_data .experience_section_title {
+  margin: 0 0 1.25rem;
+  padding-bottom: 0.65rem;
+  border-bottom: 1px solid #e8eaf0;
+  color: #27334a;
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+#jobs_data .experience_list {
+  border-left: 2px solid #e3e8f0;
+  margin-left: 0.45rem;
+}
+
+#jobs_data .experience_item {
+  display: grid;
+  grid-template-columns: 125px minmax(0, 1fr);
+  gap: 1.25rem;
+  position: relative;
+  padding: 0.25rem 0 1.75rem 1.5rem;
+}
+
+#jobs_data .experience_item::before {
   content: "";
   position: absolute;
-  left: 0px;
-  top: 10px;
-  width: 8px;
-  height: 8px;
-  background-color: #000;
+  left: -6px;
+  top: 0.55rem;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #fff;
   border-radius: 50%;
+  background: #5574a8;
+  box-shadow: 0 0 0 1px #5574a8;
 }
 
-#jobs_data .job_item::before {
-  content: "";
-  position: absolute;
-  left: 3px;
-  top: 15px;
-  width: 2px;
-  height: calc(100% + 2rem);
-  background-color: #e6e6e6;
+#jobs_data .experience_year {
+  color: #5574a8;
+  font-size: 0.95rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
 }
 
-#jobs_data .job_item:last-of-type:before {
-  display: none;
-}
-
-#jobs_data .job_header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-#jobs_data .job_header div {
-  display: flex;
-  align-items: flex-end;
-}
-
-#jobs_data .job_header h1 {
-  font-size: 1.2rem;
-  font-weight: bold;
+#jobs_data .experience_details h3 {
   margin: 0;
+  color: #202938;
+  font-size: 1.1rem;
+  font-weight: 700;
 }
 
-#jobs_data .job_header h2 {
-  font-size: 1.2rem;
-  font-style: italic;
-  margin: 0;
-  margin-left: 0.4rem;
+#jobs_data .experience_subtitle {
+  margin-top: 0.2rem;
+  color: #39465a;
+  font-size: 1rem;
 }
 
-#jobs_data .job_header .job_location {
-  margin-left: 1rem;
-  position: relative;
+#jobs_data .experience_location {
+  margin-top: 0.2rem;
+  color: #737d8d;
+  font-size: 0.9rem;
 }
 
-#jobs_data .job_header .job_location::before {
-  content: "";
-  position: absolute;
-  left: -0.5rem;
-  top: 15%;
-  height: 70%;
-  width: 1px;
-  background-color: #e6e6e6;
-}
-
-#jobs_data p {
-  margin-top: 0.5rem;
+#jobs_data .experience_details p {
+  margin: 0.65rem 0 0;
   text-align: justify;
+}
+
+#jobs_data .experience_details ul {
+  margin: 0.5rem 0 0;
+  padding-left: 1.2rem;
 }
 
 #jobs_data ul {
@@ -465,32 +470,14 @@
   }
 
   /* Jobs page styles */
-  #jobs_data .job_item {
-    padding-left: 2rem;
-    margin-bottom: 2rem;
+  #jobs_data .experience_item {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+    padding-left: 1.1rem;
   }
 
-  #jobs_data .job_item::before {
-    height: calc(100% + 2rem);
-  }
-
-  #jobs_data .job_header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  #jobs_data .job_header div {
-    display: flex;
-    align-items: flex-end;
-  }
-
-  #jobs_data .job_header h1 {
-    font-size: 1.1rem;
-  }
-
-  #jobs_data .job_header h2 {
-    font-size: 1.1rem;
-    margin-left: 0.4rem;
+  #jobs_data .experience_year {
+    font-size: 0.9rem;
   }
 
   /* Contact page styles */

@@ -222,39 +222,40 @@ $(document).ready(function () {
     document.getElementById("jobs_title").innerHTML =
       enExperiencesPageData.title;
 
-    document.getElementById("jobs_data").innerHTML = (
-      enExperiencesPageData.items
-    )
-      .map(
-        (job) =>
-          `<div class='job_item'>
-            <div class='job_header'>
-              <div>
-                <h1>${job.title}${lang === "en" ? "," : "،"}</h1>
-                <h2> ${job.company}</h2>
-              </div>
-              <div>
-                <span>${job.startData} - ${
-            job.endDate ? job.endDate : lang === "en" ? "Now" : " تاکنون "
-          }</span>
-                <span class='job_location'>${job.location}</span>
-              </div>
-            </div>
-            <p>${job.abstract}</p>
-            ${
-              job.achievements.length > 0
-                ? `<div class="job_achievements">
-                  <ul>
-                    ${job.achievements
-                      .map((achievement) => `<li>${achievement}</li>`)
-                      .join("")}
-                  </ul>
-                </div>`
-                : ""
-            }
-        </div>`
-      )
-      .join("");
+    const renderExperienceSection = (title, items) => `
+      <section class="experience_section">
+        <h2 class="experience_section_title">${title}</h2>
+        <div class="experience_list">
+          ${[...items]
+            .sort((a, b) => Number(b.startData) - Number(a.startData))
+            .map(
+              (item) => `
+                <article class="experience_item">
+                  <div class="experience_year">${item.startData}${
+                item.endDate ? `–${item.endDate}` : "–Present"
+              }</div>
+                  <div class="experience_details">
+                    <h3>${item.title}</h3>
+                    <div class="experience_subtitle">${item.company}</div>
+                    <div class="experience_location">${item.location}</div>
+                    ${item.abstract ? `<p>${item.abstract}</p>` : ""}
+                    ${
+                      item.achievements?.length
+                        ? `<ul>${item.achievements
+                            .map((achievement) => `<li>${achievement}</li>`)
+                            .join("")}</ul>`
+                        : ""
+                    }
+                  </div>
+                </article>`
+            )
+            .join("")}
+        </div>
+      </section>`;
+
+    document.getElementById("jobs_data").innerHTML =
+      renderExperienceSection("Education", enExperiencesPageData.education) +
+      renderExperienceSection("Work Experience", enExperiencesPageData.work);
   }
 
   if (pathname === "/jobs" || pathname === "/experiences") {

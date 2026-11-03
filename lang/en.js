@@ -133,21 +133,21 @@ const enResearchPageData = {
 // ---------- Jobs page data
 const enExperiencesPageData = {
   title: "Experiences",
-  items: [
+  education: [
     {
       title: "Undergraduate",
       company: "Computer Science",
       startData: "2022",
       endDate: "2026",
       location: "Xi'an Jiaotong University",
-      abstract: "",
-      achievements: [],
     },
+  ],
+  work: [
     {
       title: `Job title`,
       company: "Company name",
-      startData: "20 April 2019",
-      endDate: "20 April 2022",
+      startData: "2019",
+      endDate: "2022",
       location: "Berlin",
       abstract:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas purus viverra accumsan in nisl nisi. Arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque. In egestas erat imperdiet sed euismod nisi porta lorem mollis. Morbi tristique senectus et netus.",
@@ -156,7 +156,7 @@ const enExperiencesPageData = {
     {
       title: `Job title`,
       company: "Company name",
-      startData: "20 April 2019",
+      startData: "2019",
       endDate: "",
       location: "Berlin",
       abstract:
