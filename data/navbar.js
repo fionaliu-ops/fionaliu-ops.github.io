@@ -14,16 +14,6 @@ $(document).ready(function () {
         url: "/",
       },
       {
-        active: navbarLinks.publications ? true : false,
-        title: enNavbarData.publications,
-        url: "/publications.html",
-      },
-      {
-        active: navbarLinks.research ? true : false,
-        title: enNavbarData.Research,
-        url: "/research.html",
-      },
-      {
         active: navbarLinks.experiences ? true : false,
         title: enNavbarData.Experiences,
         url: "/experiences.html",
