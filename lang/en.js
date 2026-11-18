@@ -2,6 +2,7 @@
 const enNavbarData = {
   title: " Tong Liu ",
   Home: "Home",
+  publications: "Publications",
   Experiences: "Experiences",
   Contact: "Contact",
 };
